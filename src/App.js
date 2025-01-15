@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Form from './Component/Form'
+import "./App.css"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="form-container">
+      <span className='close-btn'>x</span>
+      <div className="form-content-left">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/061/966/non_2x/launching-into-success-3d-rendering-of-rocket-model-against-dark-background-ai-generated-free-photo.jpg" alt="left" className="form-img" />
+      </div>
+      <Form />
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
